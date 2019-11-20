@@ -581,13 +581,12 @@
                         <!--<img src="Images/contact-bg.jpg" alt="">-->
                     </div>
                     <div class="contact-form">
-                        <form method="POST" action="mailto:mushrahman@yahoomail.com" class="contact-form-main flex-style">
-                            <input type="text" placeholder="Name">
-                            <input type="text" placeholder="Email">
-                            <input type="text" placeholder="Subject">
-                            <input type="textarea" placeholder="Your Message">
-        
-                            <button class="contact-button">Send</button>
+                       <form method="POST" name="myemailform" action="Resources/PHP/form-to-email.php" class="contact-form-main flex-style">
+                            <input type="text" placeholder="Name" name="name">
+                            <input type="text" placeholder="Email" name="email">
+                            <input type="text" placeholder="Subject" name="subject">
+                            <input type="textarea" placeholder="Your Message" name="message">
+                            <input type="submit" name="submit" value="submit" class="contact-button">
                         </form> 
                     </div>
                 </div>
