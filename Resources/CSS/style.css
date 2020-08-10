@@ -33,6 +33,7 @@ body {
 .section-titles {
     width: 100%;
     margin:  0 0 5% 0;
+    
 }
 /******************LANDING PAGE*******************/
 .landing-page {
@@ -707,7 +708,7 @@ nav {
 
 .thumbnail-container {
     position: relative;
-    max-width: 1200px;
+    max-width: 1000px;
     display: flex;
     flex-flow: column wrap;
    
@@ -744,6 +745,92 @@ nav {
     padding: 2%;
 }
 
+
+
+/* The grid: Four equal columns that floats next to each other */
+.modal-image-container {
+    position: relative;
+    width: 100%;
+    /*border: 2px solid green;*/
+}
+
+.default-modal-img {
+    width: 100%;
+}
+
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.expanded-image-container {
+    position: absolute;
+    display: none; 
+    width: 100%; 
+    /*border: 1px solid pink;*/
+}
+
+.expanded-image-container img {
+      width: 100%;
+      /*border: 1px solid yellow;*/
+}
+
+.expandedImg {
+      width: 100%;
+      
+}
+  
+/* Expanding image text */
+.imgText {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+  
+/* Closable button inside the image */
+.thumbnail-closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.image-thumbnail-row {
+    /*border: 3px solid red;*/
+    width: 100%;
+    
+}
+.image-thumbnail-column {
+    /*border: 1px solid white;*/
+    flex-direction: row;
+    width: 25%;
+    padding: 5px;
+}
+  
+/* Style the images inside the grid */
+.image-thumbnail-column img {
+    opacity: 0.8;
+    cursor: pointer;
+    width: 100%;
+}
+  
+.image-thumbnail-column img:hover {
+    opacity: 1;
+}
+  
+/* Clear floats after the columns */
+.image-thumbnail-row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+
+
+
+  
+
+
 /******************CONTACT SECTION*******************/
 .contact {
     position: relative;
@@ -751,6 +838,10 @@ nav {
     flex-direction: column;
     background-color: #0D0D0D;
     padding: 5% 0 0 0;
+}
+
+.contact-h2 {
+    padding: 0 5%;
 }
 
 .contact-container {
@@ -771,6 +862,7 @@ nav {
 .contact-image h1 {
     font-size: 100px;
     color: #731616;
+   
 }
 
 .contact-image:before { 
@@ -873,3 +965,98 @@ footer h4 {
     color: white;
 }
 
+
+
+
+
+
+
+
+
+/* The grid: Four equal columns that floats next to each other */
+.flex-feature {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-cont {
+    position: relative;
+    /*border: 3px solid yellow;*/
+    flex-direction: column;
+    min-height: 100vh;
+}
+.row {
+    /*border: 3px solid red;*/
+    width: 100%;
+    
+}
+.column {
+    /*border: 1px solid white;*/
+    flex-direction: row;
+    width: 25%;
+    padding: 5px;
+}
+  
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8;
+    cursor: pointer;
+    width: 100%;
+}
+  
+.column img:hover {
+    opacity: 1;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+/* The expanding image container (positioning is needed to position the close button and the text) */
+.outside-cont {
+    position: relative;
+    width: 100%;
+    
+    /*border: 2px solid green;*/
+}
+
+.default-img {
+    width: 100%;
+}
+  
+.our-container {
+    position: absolute;
+    display: none;
+    
+}
+
+  .our-container img {
+      width: 80%;
+  }
+
+  #expandedImg {
+      width: 100%;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
