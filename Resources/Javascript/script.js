@@ -55,3 +55,124 @@ window.onload = function() {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
 };
+
+
+
+function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+  
+}
+
+/*function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  var expandImg1 = document.getElementById("expandedImg1");
+  var expandImg2 = document.getElementById("expandedImg2");
+  var expandImg3 = document.getElementById("expandedImg3");
+  var expandImg4 = document.getElementById("expandedImg4");
+  // Get the image text
+  var imgText = document.getElementById("imgtext");
+  var imgText1 = document.getElementById("imgtext1");
+  var imgText2 = document.getElementById("imgtext2");
+  var imgText3 = document.getElementById("imgtext3");
+  var imgText4 = document.getElementById("imgtext4");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  expandImg1.src = imgs.src;
+  expandImg2.src = imgs.src;
+  expandImg3.src = imgs.src;
+  expandImg4.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  imgText1.innerHTML = imgs.alt;
+  imgText2.innerHTML = imgs.alt;
+  imgText3.innerHTML = imgs.alt;
+  imgText4.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+  expandImg1.parentElement.style.display = "block";
+  expandImg2.parentElement.style.display = "block";
+  expandImg3.parentElement.style.display = "block";
+  expandImg4.parentElement.style.display = "block";
+  
+}*/
+
+function myFunction1(imgs) {
+  // Get the expanded image
+  var expandImg1 = document.getElementById("expandedImg1");
+  // Get the image text
+  var imgText1 = document.getElementById("imgtext1");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg1.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText1.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg1.parentElement.style.display = "block";
+  
+}
+
+function myFunction2(imgs) {
+  // Get the expanded image
+  var expandImg2 = document.getElementById("expandedImg2");
+  // Get the image text
+  var imgText2 = document.getElementById("imgtext2");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg2.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText2.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg2.parentElement.style.display = "block";
+  
+}
+
+function myFunction3(imgs) {
+  // Get the expanded image
+  var expandImg3 = document.getElementById("expandedImg3");
+  // Get the image text
+  var imgText3 = document.getElementById("imgtext3");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg3.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText3.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg3.parentElement.style.display = "block";
+  
+}
+
+function myFunction4(imgs) {
+  // Get the expanded image
+  var expandImg4 = document.getElementById("expandedImg4");
+  // Get the image text
+  var imgText4 = document.getElementById("imgtext4");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg4.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText4.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg4.parentElement.style.display = "block";
+  
+}
+
+/*function myFunction(imgs) {
+  for (i = 0; i < 6; i++) {
+    // Get the expanded image
+    var expandImg = document.getElementById("expandedImg" + i);
+    // Get the image text
+    var imgText = document.getElementById("imgtext" + i);
+    // Use the same src in the expanded image as the image being clicked on from the grid
+    expandImg.src = imgs.src;
+    // Use the value of the alt attribute of the clickable image as text inside the expanded image
+    imgText.innerHTML = imgs.alt;
+    // Show the container element (hidden with CSS)
+    expandImg.parentElement.style.display = "block";
+  }
+}*/
