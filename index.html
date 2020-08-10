@@ -47,7 +47,7 @@
         <!----------------------------------SKILLS SECTION------------------------------------>
         <section class="skills all-subcontainer  flex-style">
             <div class="skills-heading">
-                <h2>WEB DEVELOPER, WEB PROGRAMMER </h2>
+                <h2>WEB DEVELOPER, WEB DESIGNER </h2>
                 <p> 
                     Your quest for a developer to help put that creative idea of 
                     yours live probably brought you here. The good news is that 
@@ -64,11 +64,11 @@
                         <i class="fa fa-code fa-lg fa-fw user-i" aria-hidden="true"></i> 
                     </div>
                     <h3 class="skill-sub-heading">
-                        Hand-Coded HTML
+                        Front-end Development
                     </h3>
                     <p class="skill-p-text">
-                        I write clean, well formatted, semantic HTML5 by hand with contents that
-                        are easy to read, collaborate, trouble-shoot and access.
+                        I build visually appealing websites with features and contents 
+                        that are easy to navigate, read, and access.
                     </p>
                 </div>
 
@@ -318,9 +318,12 @@
                     </div>
                             
                     <div class="portfolio-image-text flex-style">
-                        <h3>Login & Signup Template.</h3>
+                        <h3>Home Designs</h3>
                         <p class="project-description">
-                            A signup and login form built on a single page.  
+                            A versatile and simple signup and login form 
+                            that can be incorporated into any website. It has
+                            both signup and login form on the same page and 
+                            it's free to download.  
                         </p>
                         <div class="project-view">
                             <a href="#openModal2">Learn More</a>
@@ -332,13 +335,15 @@
                 <div class="portfolio-row-content">
                     <div class="portfolio-project portfolio-three flex-style">
                         <div class="portfolio-image flex-style">
-                            <img src="Resources/Images/clock-app.jpg" alt="">
+                            <img src="Resources/Images/couturecave/couturecave-landing.jpg" alt="">
                         </div>
                             
                         <div class="portfolio-image-text flex-style ">
-                            <h3>World Clock</h3>
+                            <h3>Couture Cave</h3>
                             <p class="project-description">
-                                An app that display the current international time   
+                                A ready to wear and haute couture website. They make 
+                                a variety of art and crafts products as well. They offers 
+                                services to clients in need of unique clothings for grand occassions    
                             </p>
                             <div class="project-view">
                                 <a href="#openModal3">Learn More</a>
@@ -391,13 +396,14 @@
                 <div class="portfolio-row-content">
                     <div class="portfolio-project portfolio-six flex-style">
                         <div class="portfolio-image flex-style">
-                            <img src="Resources/Images/src-project.jpg" alt="">
+                            <img src="Resources/Images/rikachan/rikachan-landing.jpg" alt="">
                         </div>
                         
                         <div class="portfolio-image-text flex-style">
-                            <h3>African University of Management</h3>
+                            <h3>RIKACHAN</h3>
                             <p class="project-description">
-                                A responsive school website template 
+                                A catridge recycling and tech accessory sale website. They
+                                sells laptops, printers, and other tech gadgets. 
                             </p>
                             <div class="project-view">
                                 <a href="#openModal6">Learn More</a>
@@ -413,26 +419,37 @@
         <div>
             <a href="#close" title="Close" class="close">X</a>
             <div class="thumbnail-container">
-                <img class="mySlides-fash" src="Resources/Images/fashion-project.jpg" style="width:100%">
-                <img class="mySlides-fash" src="Resources/Images/fashion-project-sub1.jpg" style="width:100%;display: none">
-                <img class="mySlides-fash" src="Resources/Images/fashion-project-sub2.jpg" style="width:100%;display:none">
-                <img class="mySlides-fash" src="Resources/Images/fashion-project-sub3.jpg" style="width:100%;display:none">
-              
-                <div class=" image-indicator">
-                  <div class="image-indicator-div">
-                    <img class="demo-fash fash-opacity fash-hover-opacity-off" src="Resources/Images/fashion-project.jpg"  onclick="currentDiv(1)">
-                  </div>
-                  <div class="image-indicator-div">
-                    <img class="demo-fash fash-opacity fash-hover-opacity-off" src="Resources/Images/fashion-project-sub1.jpg"  onclick="currentDiv(2)">
-                  </div>
-                  <div class="image-indicator-div">
-                    <img class="demo-fash fash-opacity fash-hover-opacity-off" src="Resources/Images/fashion-project-sub2.jpg"  onclick="currentDiv(3)">
-                  </div>
-                  <div class="image-indicator-div">
-                    <img class="demo-fash fash-opacity fash-hover-opacity-off" src="Resources/Images/fashion-project-sub3.jpg"  onclick="currentDiv(4)">
-                  </div>
+                
+                <div class="modal-image-container flex-style">
+                    <img class="default-modal-img" src="../portfolio-master/Resources/Images/fashion-project.jpg" alt="Landing Page">
+                    <!-- The expanding image container -->
+                    <div class="expanded-image-container">
+                        <!-- Close the image -->
+                        <span onclick="this.parentElement.style.display='none'" class="thumbnail-closebtn">&times;</span>
+                        
+                        <!-- Expanded image -->
+                        <img id="expandedImg" class="expandedImg">
+        
+                        <!-- Image text -->
+                        <div id="imgtext" class="imgText"></div>
+                    </div>
                 </div>
-              </div>
+                <div class="image-thumbnail-row flex-style">
+                    <div class="image-thumbnail-column">
+                    <img src="../portfolio-master/Resources/Images/fashion-project.jpg" alt="" onclick="myFunction(this);">
+                    </div>
+                    <div class="image-thumbnail-column">
+                    <img src="../portfolio-master/Resources/Images/fashion-project-sub1.jpg" alt="" onclick="myFunction(this);">
+                    </div>
+                    <div class="image-thumbnail-column">
+                    <img src="../portfolio-master/Resources/Images/fashion-project-sub2.jpg" alt="" onclick="myFunction(this);">
+                    </div>
+                    <div class="image-thumbnail-column">
+                    <img src="../portfolio-master/Resources/Images/fashion-project-sub3.jpg" alt="" onclick="myFunction(this);">
+                    </div>
+                </div>
+
+            </div>
     
             <h4 class="project-detail-title">The Problem</h4>
             <p>
@@ -473,14 +490,42 @@
     <div id="openModal3" class="modalDialog">
         <div>
             <a href="#close" title="Close" class="close">X</a>
-            <div class="thumbnail-container">
-                <img class="mySlides-worldClock" src="Resources/Images/clock-app.jpg" style="width:100%">   
-              </div><br/>
+            <div class="modal-image-container flex-style">
+                <img class="default-modal-img" src="../portfolio-master/Resources/Images/couturecave/couturecave-landing.jpg" alt="Landing Page">
+                <!-- The expanding image container -->
+                <div class="expanded-image-container">
+                    <!-- Close the image 
+                    <span onclick="this.parentElement.style.display='none'" class="thumbnail-closebtn">&times;</span>
+                    -->
+                    <!-- Expanded image -->
+                    <img id="expandedImg1" class="expandedImg">
+    
+                    <!-- Image text -->
+                    <div id="imgtext1" class="imgText"></div>
+                </div>
+            </div>
+            <div class="image-thumbnail-row flex-style">
+                <div class="image-thumbnail-column">
+                <img src="../portfolio-master/Resources/Images/couturecave/couturecave-landing.jpg" alt="" onclick="myFunction1(this);">
+                </div>
+                <div class="image-thumbnail-column">
+                <img src="../portfolio-master/Resources/Images/couturecave/couturecave-intro.jpg" alt="" onclick="myFunction1(this);">
+                </div>
+                <div class="image-thumbnail-column">
+                <img src="../portfolio-master/Resources/Images/couturecave/couturecave-portfolio.jpg" alt="" onclick="myFunction1(this);">
+                </div>
+                <div class="image-thumbnail-column">
+                <img src="../portfolio-master/Resources/Images/couturecave/couturecave-contact.jpg" alt="" onclick="myFunction1(this);">
+                </div>
+            </div>
+            
+            <br/>
             
             <p>
-                Built with javascript, html, and css, this app displays the world time and 
-                date for cities in all time zones. 
-                The current international time, and also takes into account all DST clock changes.
+                A user friendly front-end that 
+                allows users to easily locate products they're intersted in purchasing 
+                and also get designers who can make their uniue outfiits. Built in HTML,
+                CSS, and JS
             </p>
         </div>
     </div>
@@ -489,27 +534,39 @@
         <div>
             <a href="#close" title="Close" class="close">X</a>
             <div class="thumbnail-container">
-                <img class="mySlides-booking" src="Resources/Images/booking-project.jpg" style="width:100%">
-                <img class="mySlides-booking" src="Resources/Images/booking-image-sub1.jpg" style="width:100%;display: none">
-                <img class="mySlides-booking" src="Resources/Images/booking-image-sub2.jpg" style="width:100%;display:none">
-                
-                <div class=" image-indicator">
-                  <div class="image-indicator-div">
-                    <img class="demo-booking booking-opacity booking-hover-opacity-off" src="Resources/Images/booking-project.jpg"  onclick="currentDiv1(1)">
-                  </div>
-                  <div class="image-indicator-div">
-                    <img class="demo-booking booking-opacity booking-hover-opacity-off" src="Resources/Images/booking-image-sub1.jpg"  onclick="currentDiv1(2)">
-                  </div>
-                  <div class="image-indicator-div">
-                    <img class="demo-booking booking-opacity booking-hover-opacity-off" src="Resources/Images/booking-image-sub2.jpg"  onclick="currentDiv1(3)">
-                  </div>
+                <div class="modal-image-container flex-style">
+                    <img class="default-modal-img" src="../portfolio-master/Resources/Images/booking-project.jpg" alt="Landing Page">
+                    <!-- The expanding image container -->
+                    <div class="expanded-image-container">
+                        <!-- Close the image 
+                        <span onclick="this.parentElement.style.display='none'" class="thumbnail-closebtn">&times;</span>
+                        -->
+                        <!-- Expanded image -->
+                        <img id="expandedImg2" class="expandedImg">
+        
+                        <!-- Image text -->
+                        <div id="imgtext2" class="imgText"></div>
+                    </div>
                 </div>
-            
-            
-            <p>
-                This site that neatly oragnizes lots of information in tables and tabs
-            </p>
-        </div>
+                <div class="image-thumbnail-row flex-style">
+                    <div class="image-thumbnail-column">
+                    <img src="../portfolio-master/Resources/Images/booking-project.jpg" alt="" onclick="myFunction2(this);">
+                    </div>
+                    <div class="image-thumbnail-column">
+                    <img src="../portfolio-master/Resources/Images/booking-image-sub1.jpg" alt="" onclick="myFunction2(this);">
+                    </div>
+                    <div class="image-thumbnail-column">
+                    <img src="../portfolio-master/Resources/Images/booking-image-sub2.jpg" alt="" onclick="myFunction2(this);">
+                    </div>
+                    
+                </div>
+
+                <p>
+                    Tourist sites are known to have tons of information and very long to navigate. 
+                    This site stand out because it's compounded with all the necessary information 
+                    needed but it's still easy to navigate, well-organized, and very user-friendly.  
+                </p>
+            </div>
         </div>
     </div>
     
@@ -517,22 +574,35 @@
         <div>
             <a href="#close" title="Close" class="close">X</a>
             <div class="thumbnail-container">
-                <img class="mySlides-sdg" src="Resources/Images/sdg-project.jpg" style="width:100%">
-                <img class="mySlides-sdg" src="Resources/Images/sdg-project1.jpg" style="width:100%;display: none">
-                
-                <div class=" image-indicator">
-                  <div class="image-indicator-div">
-                    <img class="demo-sdg sdg-opacity sdg-hover-opacity-off" src="Resources/Images/sdg-project.jpg"  onclick="currentDiv11(1)">
-                  </div>
-                  <div class="image-indicator-div">
-                    <img class="demo-sdg sdg-opacity sdg-hover-opacity-off" src="Resources/Images/sdg-project1.jpg"  onclick="currentDiv11(2)">
-                  </div>
+
+                <div class="modal-image-container flex-style">
+                    <img class="default-modal-img" src="../portfolio-master/Resources/Images/sdg-project.jpg" alt="Landing Page">
+                    <!-- The expanding image container -->
+                    <div class="expanded-image-container">
+                        <!-- Close the image 
+                        <span onclick="this.parentElement.style.display='none'" class="thumbnail-closebtn">&times;</span>
+                        -->
+                        <!-- Expanded image -->
+                        <img id="expandedImg3" class="expandedImg">
+        
+                        <!-- Image text -->
+                        <div id="imgtext3" class="imgText"></div>
+                    </div>
+                </div>
+                <div class="image-thumbnail-row flex-style">
+                    <div class="image-thumbnail-column">
+                    <img src="../portfolio-master/Resources/Images/sdg-project.jpg" alt="" onclick="myFunction3(this);">
+                    </div>
+                    <div class="image-thumbnail-column">
+                    <img src="../portfolio-master/Resources/Images/sdg-project1.jpg" alt="" onclick="myFunction3(this);">
+                    </div>
+                    
                 </div>
                 
                 <p>
-                   I created a website that neatly oragnizes all the seventeen 
+                   A front-end that neatly oragnizes all the seventeen 
                    SDGs and gives details about each without making the website look 
-                   crowded. I  used animations to hide and ease-in extra details when requested.
+                   crowded. Animations are used to hide and ease-in extra details when requested.
                    This site was built purely in HTML5 and CSS3
                     
                 </p>
@@ -546,24 +616,38 @@
         <div>
             <a href="#close" title="Close" class="close">X</a>
             <div class="thumbnail-container">
-                <img class="mySlides-src" src="Resources/Images/src-project.jpg" style="width:100%">
-                <img class="mySlides-src" src="Resources/Images/src-project-image.jpg" style="width:100%;display: none">
-                <img class="mySlides-src" src="Resources/Images/src-project-image1.jpg" style="width:100%;display: none">
-                
-                <div class=" image-indicator">
-                    <div class="image-indicator-div">
-                        <img class="demo-src src-opacity src-hover-opacity-off" src="Resources/Images/src-project.jpg"  onclick="currentDiv111(1)">
+
+
+                <div class="modal-image-container flex-style">
+                    <img class="default-modal-img" src="../portfolio-master/Resources/Images/rikachan/rikachan-landing.jpg" alt="Landing Page">
+                    <!-- The expanding image container -->
+                    <div class="expanded-image-container">
+                        <!-- Close the image 
+                        <span onclick="this.parentElement.style.display='none'" class="thumbnail-closebtn">&times;</span>
+                        -->
+                        <!-- Expanded image -->
+                        <img id="expandedImg4" class="expandedImg">
+        
+                        <!-- Image text -->
+                        <div id="imgtext4" class="imgText"></div>
                     </div>
-                    <div class="image-indicator-div">
-                        <img class="demo-src src-opacity src-hover-opacity-off" src="Resources/Images/src-project-image.jpg"  onclick="currentDiv111(2)">
+                </div>
+                <div class="image-thumbnail-row flex-style">
+                    <div class="image-thumbnail-column">
+                    <img src="../portfolio-master/Resources/Images/rikachan/rikachan-landing.jpg" alt="" onclick="myFunction4(this);">
                     </div>
-                    <div class="image-indicator-div">
-                        <img class="demo-src src-opacity src-hover-opacity-off" src="Resources/Images/src-project-image1.jpg"  onclick="currentDiv111(3)">
+                    <div class="image-thumbnail-column">
+                    <img src="../portfolio-master/Resources/Images/rikachan/rikachan-product.jpg" alt="" onclick="myFunction4(this);">
+                    </div>
+                    <div class="image-thumbnail-column">
+                    <img src="../portfolio-master/Resources/Images/rikachan/rikachan-product-details.jpg" alt="" onclick="myFunction4(this);">
+                    </div>
+                    <div class="image-thumbnail-column">
+                    <img src="../portfolio-master/Resources/Images/rikachan/rikachan-contact.jpg" alt="" onclick="myFunction4(this);">
                     </div>
                 </div>
                 <p>
-                    A fast-loading responsive website template that features a multimedia page, a login page, 
-                    and a course page.   
+                    A fast-loading responsive e-commerce site 
                 </p>
                 <div class="site-link">
                     <a href="Resources/Projects/SRC-Project/index.html" class="view-site" > View site</a>
@@ -574,7 +658,7 @@
 
          <!----------------------------------CONTACT SECTION------------------------------------>
         <section class="contact all-subcontainer flex-style" id="contact">
-                <h2 class="section-titles">CONTACT ME</h2>
+                <h2 class="section-titles contact-h2">CONTACT ME</h2>
                 <div class="contact-container flex-style">
                     <div class="contact-image flex-style">
                         <h1>Let's Chat</h1>
